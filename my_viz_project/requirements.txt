@@ -1,0 +1,6 @@
+soccerdata
+pandas
+matplotlib
+seaborn
+plotly
+streamlit

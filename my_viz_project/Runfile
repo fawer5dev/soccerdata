@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+# Soccer Data Visualization Project - Runfile
+# Commands to run common tasks
+
+# Launch the Streamlit web app
+start_web.sh:
+	@echo "🚀 Starting Soccer Team Evolution Web App..."
+	@bash start_web.sh
+
+# Launch Jupyter Notebook
+start_jupyter.sh:
+	@echo "🚀 Starting Jupyter Notebook..."
+	@bash start_jupyter.sh
+
+# Prepare for deployment
+prepare_deploy.sh:
+	@echo "📦 Preparing deployment package..."
+	@bash prepare_deploy.sh
+
+# Install/update dependencies
+install:
+	@echo "📦 Installing dependencies..."
+	@source ../venv_soccer_viz/bin/activate && pip install -r requirements.txt
+
+# Show help
+help:
+	@echo "Available commands:"
+	@echo "  run start_web.sh       - Launch the Streamlit web app"
+	@echo "  run start_jupyter.sh   - Launch Jupyter Notebook"
+	@echo "  run prepare_deploy.sh  - Prepare deployment package"
+	@echo "  run install            - Install/update dependencies"
+	@echo "  run help               - Show this help message"

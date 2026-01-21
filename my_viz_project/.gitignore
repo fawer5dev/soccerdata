@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+venv_soccer_viz/
+ENV/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Data cache
+data/
+*.csv
+*.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Output
+output/
+*.png
+*.jpg
+*.pdf
